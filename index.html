@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" type="text/css" href="css/styles.css" />
+    <link rel="stylesheet" href="css/media-queries.css">
+    <title>Product List Page C4 Nexus</title>
+</head>
+<body>
+
+    <!-- Header -->
+    <header class="sticky-header">
+        <div class="logo">
+          <h2>Logo</h2>
+        </div>
+        <div class="categories-desktop">
+          <ul>
+            <li><a href="#">Mens</a></li>
+            <li><a href="#">Womens</a></li>
+            <li><a href="#">Childrens</a></li>
+          </ul>
+        </div>
+        <div class="menu-icons">
+            <div class="basket-icon">
+                <i class="fa-solid fa-cart-shopping"></i>
+            </div>
+            <div class="menu-icon">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main -->
+    <nav class="nav-menu">
+        <div class="close-btn">
+            <i class="fa-solid fa-xmark"></i>
+        </div>
+        <ul>
+          <li><a href="#">Mens</a></li>
+          <li><a href="#">Womens</a></li>
+          <li><a href="#">Childrens</a></li>
+        </ul>
+    </nav>
+
+    <h2 class="current-category">Mens</h2>
+
+    <!-- filter and sort container -->
+
+    <div class="filter-sort-container">
+        
+        <div class="select-dropdown">
+            <select class="select-dropdown-menu">
+                <option value="" disabled selected>Select an option</option>
+                <option value="alphabetical-AZ">Alphabetical a-z</option>
+                <option value="alphabetical-ZA">Alphabetical z-a</option>
+                <option value="priceAscending">Price ascending</option>
+                <option value="priceDescending">Price descending</option>
+              </select>
+        </div>
+        <div class="filter-section">
+          <div class="filter-icon">
+            <i class="fa-solid fa-filter"></i>
+          </div>
+          <div class="filter-container">
+            <div class="filter-close-btn close-btn">
+              <i class="fa-solid fa-xmark"></i>
+            </div>
+            <div class="filter-by-price">
+              <h3 class="filter-section-header">Price Range</h3>
+              <input type="number" id="min-price" placeholder="Min Price">
+              <input type="number" id="max-price" placeholder="Max Price">
+            </div>
+            <div class="filter-by-color">
+              <h2 class="filter-section-header">Filter By Color</h2>
+              <label class="checkbox-label">
+                <input type="checkbox" class="color-filter" value="black">
+                Black
+              </label>
+              <label class="checkbox-label">
+                <input type="checkbox" class="color-filter" value="white">
+                White
+              </label>
+              <label class="checkbox-label">
+                <input type="checkbox" class="color-filter" value="gray">
+                Gray
+              </label>
+              <label class="checkbox-label">
+                <input type="checkbox" class="color-filter" value="multi-color">
+                Multi-color
+              </label>
+            </div>
+            <div class="filter-btn-container">
+              <button class="btn btn-close btn-filter-close">close</button>
+              <button class="btn apply-filters">apply filters</button>
+            </div>
+          </div>
+        </div>
+    </div>
+
+    <!-- product grid -->
+    <div class="main-section-desktop">
+      <div class="filter-sort-container-desktop">
+        
+        
+        <div class="filter-section">
+          
+          <div class="filter-container">
+            <div class="select-dropdown">
+              <select class="select-dropdown-menu js-select-dropdown-menu-desktop">
+                  <option value="" disabled selected>Select an option</option>
+                  <option value="alphabetical-AZ">Alphabetical a-z</option>
+                  <option value="alphabetical-ZA">Alphabetical z-a</option>
+                  <option value="priceAscending">Price ascending</option>
+                  <option value="priceDescending">Price descending</option>
+                </select>
+          </div>
+            <div class="filter-by-price">
+              <h3 class="filter-section-header">Price Range</h3>
+              <input type="number" id="min-price-desktop" placeholder="Min Price">
+              <input type="number" id="max-price-desktop" placeholder="Max Price">
+            </div>
+            <div class="filter-by-color">
+              <h2 class="filter-section-header">Filter By Color</h2>
+              <label class="checkbox-label">
+                <input type="checkbox" class="color-filter" value="black">
+                Black
+              </label>
+              <label class="checkbox-label">
+                <input type="checkbox" class="color-filter" value="white">
+                White
+              </label>
+              <label class="checkbox-label">
+                <input type="checkbox" class="color-filter" value="gray">
+                Gray
+              </label>
+              <label class="checkbox-label">
+                <input type="checkbox" class="color-filter" value="multi-color">
+                Multi-color
+              </label>
+            </div>
+            <div class="filter-btn-container">
+
+              <button class="js-apply-filters-desktop btn apply-filters-desktop">apply filters</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <section class="js-product-grid product-grid">
+    </div>
+    </section>
+
+    <!-- load more button -->
+    <button class="load-more-btn">Load More</button>
+    
+    <!-- footer -->
+    <footer class="site-footer">
+        <div class="footer-content">
+          <div class="logo footer-logo">
+            <h2>Logo</h2>
+          </div>
+          <div class="footer-links">
+            <ul>
+              <li><a href="#">Home</a></li>
+              <li><a href="#">Products</a></li>
+              <li><a href="#">About Us</a></li>
+              <li><a href="#">Contact Us</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <p>&copy; 2023 Your E-Commerce Site. All rights reserved.</p>
+        </div>
+      </footer>
+
+    <script src="index.js"></script> 
+</body>
+</html>
